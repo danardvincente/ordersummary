@@ -1,0 +1,128 @@
+
+@import 'config';
+
+
+body {
+    background: $bg-image;
+    background-color: $primary-color;
+    font-family: $font-stack;
+}
+
+.container {
+    position: relative;
+    background: #fff;
+    padding: 100px;
+    margin: auto;
+    width: 130px;
+    height: 330px;
+    top: 60px;
+    border-radius: 4%;
+    
+    // Hero Image
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 4% 4% 0 0;
+    }
+
+    #card-content {
+        position: absolute;
+        top: 160px;
+        right: 0px;
+        width: 100%;
+
+        h3 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        p {
+            text-align: center;
+            color: #949494;
+            font-size: 0.8rem;
+        }
+    }
+
+    #plan {
+        position: relative;
+        width: 215px;
+        height: 25px;
+        padding: 25px;
+        top: 190px;
+        right: 67px;
+        border-radius: 6%;
+        background: #f4f4f4;
+
+        // Music note image
+        img {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            top: 20px;
+            right: 210px;
+        }
+
+
+        #plan-content {
+
+           // plan title
+            h4 {
+                position: absolute;
+                top: 0;
+                left: 75px;
+                
+            }
+
+            // price
+            p {
+                position: absolute;
+                top: 25px;
+                left: 75px;
+                color: $p_color;
+            }
+
+            // change link
+            a {
+                position: absolute;
+                top: 35px;
+                right: 15px;
+                text-decoration: none;
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    // button
+    .btn {
+        position: absolute;
+        width: 260px;
+        height: 40px;
+        top: 390px;
+        right: 35px;
+        border-radius: 10%;
+        background: $secondary-color;
+        color: #fff;
+        font-weight: bold;
+        transition: opacity 1s ease-in;
+        box-shadow: 0 7px 19px 2px gray;
+
+
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+
+    #cancel {
+        position: absolute;
+        top: 450px;
+        right: 130px;
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
