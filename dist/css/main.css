@@ -77,9 +77,11 @@ body {
   height: 40px;
   top: 390px;
   right: 35px;
-  border-radius: 10%;
+  border-radius: 10px;
   background: #3829e0;
   color: #fff;
+  outline: none;
+  padding: 10px;
   font-weight: bold;
   transition: opacity 1s ease-in;
   box-shadow: 0 7px 19px 2px gray;
