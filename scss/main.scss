@@ -33,7 +33,7 @@ body {
         right: 0px;
         width: 100%;
 
-        h3 {
+        h1 {
             text-align: center;
             font-weight: bold;
         }
@@ -50,7 +50,7 @@ body {
         width: 215px;
         height: 25px;
         padding: 25px;
-        top: 190px;
+        top: 200px;
         right: 67px;
         border-radius: 6%;
         background: #f4f4f4;
@@ -68,11 +68,10 @@ body {
         #plan-content {
 
            // plan title
-            h4 {
+            strong {
                 position: absolute;
-                top: 0;
+                top: 18px;
                 left: 75px;
-                
             }
 
             // price
@@ -99,7 +98,7 @@ body {
         position: absolute;
         width: 260px;
         height: 40px;
-        top: 390px;
+        top: 395px;
         right: 35px;
         border-radius: 10px;
         background: $secondary-color;
@@ -119,12 +118,12 @@ body {
 
     #cancel {
         position: absolute;
-        top: 450px;
+        top: 460px;
         right: 130px;
 
-        a {
-            text-decoration: none;
-            color: #000;
-        }
+        
+        text-decoration: none;
+        color: #000;
+        
     }
 }

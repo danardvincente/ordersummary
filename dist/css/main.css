@@ -27,7 +27,7 @@ body {
   right: 0px;
   width: 100%;
 }
-.container #card-content h3 {
+.container #card-content h1 {
   text-align: center;
   font-weight: bold;
 }
@@ -41,7 +41,7 @@ body {
   width: 215px;
   height: 25px;
   padding: 25px;
-  top: 190px;
+  top: 200px;
   right: 67px;
   border-radius: 6%;
   background: #f4f4f4;
@@ -53,9 +53,9 @@ body {
   top: 20px;
   right: 210px;
 }
-.container #plan #plan-content h4 {
+.container #plan #plan-content strong {
   position: absolute;
-  top: 0;
+  top: 18px;
   left: 75px;
 }
 .container #plan #plan-content p {
@@ -75,7 +75,7 @@ body {
   position: absolute;
   width: 260px;
   height: 40px;
-  top: 390px;
+  top: 395px;
   right: 35px;
   border-radius: 10px;
   background: #3829e0;
@@ -92,10 +92,8 @@ body {
 }
 .container #cancel {
   position: absolute;
-  top: 450px;
+  top: 460px;
   right: 130px;
-}
-.container #cancel a {
   text-decoration: none;
   color: #000;
 }
