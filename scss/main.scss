@@ -1,6 +1,11 @@
 
 @import 'config';
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     background: $bg-image;
@@ -9,33 +14,31 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
     position: relative;
-    background: #fff;
-    padding: 100px;
+    background:#fff;
     margin: auto;
-    width: 130px;
-    height: 330px;
-    top: 60px;
-    border-radius: 4%;
+    width: 380px;
+    height: 530px;
+    top: 80px;
+    border-radius: 10px;
     
     // Hero Image
-    img {
-        position: absolute;
-        top: 0;
-        right: 0;
+    .hero-img {
         width: 100%;
-        border-radius: 4% 4% 0 0;
+        border-radius: 10px 10px 0 0;
     }
 
     #card-content {
-        position: absolute;
-        top: 160px;
-        right: 0px;
         width: 100%;
 
         h1 {
             text-align: center;
             font-weight: bold;
+            margin-bottom: 10px;
         }
 
         p {
@@ -46,65 +49,50 @@ body {
     }
 
     #plan {
-        position: relative;
-        width: 215px;
-        height: 25px;
-        padding: 25px;
-        top: 200px;
-        right: 67px;
-        border-radius: 6%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-self: center;
+        gap: 18px;
+        width: 285px;
+        height: 70px;
+        padding: 20px;
+        border-radius: 5px;
         background: #f4f4f4;
 
         // Music note image
-        img {
-            position: absolute;
+        .music-img {
             width: 35px;
             height: 35px;
-            top: 20px;
-            right: 210px;
         }
 
 
         #plan-content {
-
-           // plan title
-            strong {
-                position: absolute;
-                top: 18px;
-                left: 75px;
-            }
-
+            width: 210px;
             // price
-            p {
-                position: absolute;
-                top: 25px;
-                left: 75px;
+            .price {
                 color: $p_color;
             }
 
-            // change link
-            a {
-                position: absolute;
-                top: 35px;
-                right: 15px;
-                text-decoration: none;
-                font-size: 0.7rem;
-            }
+        }
+        // change link
+        #change {
+            text-decoration: none;
+            font-size: 0.7rem;
         }
     }
 
     // button
     .btn {
-        position: absolute;
+        align-self: center;
         width: 260px;
         height: 40px;
-        top: 395px;
-        right: 35px;
         border-radius: 10px;
         background: $secondary-color;
         color: #fff;
         outline: none;
         padding: 10px;
+        margin-top: 10px;
         font-weight: bold;
         transition: opacity 1s ease-in;
         box-shadow: 0 7px 19px 2px gray;
@@ -117,13 +105,9 @@ body {
     }
 
     #cancel {
-        position: absolute;
-        top: 460px;
-        right: 130px;
-
-        
+        align-self: center;
         text-decoration: none;
         color: #000;
-        
+        margin-top: 10px;
     }
 }

@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: url("../images/pattern-background-desktop.svg") no-repeat center center/cover;
   background-color: #e0e8ff;
@@ -5,31 +11,29 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
   position: relative;
   background: #fff;
-  padding: 100px;
   margin: auto;
-  width: 130px;
-  height: 330px;
-  top: 60px;
-  border-radius: 4%;
+  width: 380px;
+  height: 530px;
+  top: 80px;
+  border-radius: 10px;
 }
-.container img {
-  position: absolute;
-  top: 0;
-  right: 0;
+.container .hero-img {
   width: 100%;
-  border-radius: 4% 4% 0 0;
+  border-radius: 10px 10px 0 0;
 }
 .container #card-content {
-  position: absolute;
-  top: 160px;
-  right: 0px;
   width: 100%;
 }
 .container #card-content h1 {
   text-align: center;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 .container #card-content p {
   text-align: center;
@@ -37,51 +41,41 @@ body {
   font-size: 0.8rem;
 }
 .container #plan {
-  position: relative;
-  width: 215px;
-  height: 25px;
-  padding: 25px;
-  top: 200px;
-  right: 67px;
-  border-radius: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: center;
+  gap: 18px;
+  width: 285px;
+  height: 70px;
+  padding: 20px;
+  border-radius: 5px;
   background: #f4f4f4;
 }
-.container #plan img {
-  position: absolute;
+.container #plan .music-img {
   width: 35px;
   height: 35px;
-  top: 20px;
-  right: 210px;
 }
-.container #plan #plan-content strong {
-  position: absolute;
-  top: 18px;
-  left: 75px;
+.container #plan #plan-content {
+  width: 210px;
 }
-.container #plan #plan-content p {
-  position: absolute;
-  top: 25px;
-  left: 75px;
+.container #plan #plan-content .price {
   color: #949494;
 }
-.container #plan #plan-content a {
-  position: absolute;
-  top: 35px;
-  right: 15px;
+.container #plan #change {
   text-decoration: none;
   font-size: 0.7rem;
 }
 .container .btn {
-  position: absolute;
+  align-self: center;
   width: 260px;
   height: 40px;
-  top: 395px;
-  right: 35px;
   border-radius: 10px;
   background: #3829e0;
   color: #fff;
   outline: none;
   padding: 10px;
+  margin-top: 10px;
   font-weight: bold;
   transition: opacity 1s ease-in;
   box-shadow: 0 7px 19px 2px gray;
@@ -91,11 +85,10 @@ body {
   cursor: pointer;
 }
 .container #cancel {
-  position: absolute;
-  top: 460px;
-  right: 130px;
+  align-self: center;
   text-decoration: none;
   color: #000;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
